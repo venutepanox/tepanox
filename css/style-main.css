@@ -10406,17 +10406,7 @@ button.mfp-close {
     width: 28px;
 }
 .img_modal .close {
-    font-size: 39px;
-    padding-right: 25px;
-    padding-top: 25px;
-    opacity: 1;
-    color: red;
-    position: relative;
-    right: 29%;
-    top: 22%;
-    padding: 0;
-    z-index: 1;
-    /* margin-right: 58px; */
+ display: none;
 }
 
 
@@ -10433,19 +10423,7 @@ button.mfp-close {
     overflow: hidden;
     outline: 0;
 }
-.img_modal .close {
-    font-size: 39px;
-    padding-right: 25px;
-    padding-top: 25px;
-    opacity: 1;
-    color: red;
-    position: relative;
-    right: 11%;
-    top: 13%;
-    padding: 0;
-    z-index: 1;
-    /* margin-right: 58px; */
-}
+
 }
 /* For Tablet View */
 @media screen and (min-device-width: 768px)
@@ -10461,19 +10439,7 @@ and (max-device-width: 1024px) {
     overflow: hidden;
     outline: 0;
 }
-.img_modal .close {
-    font-size: 39px;
-    padding-right: 25px;
-    padding-top: 25px;
-    opacity: 1;
-    color: red;
-    position: relative;
-    right: 29%;
-    top: 22%;
-    padding: 0;
-    z-index: 1;
-    /* margin-right: 58px; */
-}
+
 }
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px)
