@@ -2691,8 +2691,9 @@
     padding: 0px 30px;
   }
   .doc_banner_area_dip {
-    padding: 130px 0px 245px;
-  }
+  padding: 62px 0px 0px;
+}
+
   .doc_banner_area_dip .header_search_form .form-group {
     display: block;
   }

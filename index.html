@@ -19,8 +19,47 @@
   <link rel="stylesheet" href="css/style-main.css">
   <link rel="stylesheet" href="css/responsive.css">
 
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <style>
+
+.dropbtn {
+ 
+  color: black;
+  padding-top:5px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  min-width: 360px;
+  padding-left: 35px;
+  z-index: 1;
+  line-height: 1.8;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+</style>
 
 <script type='text/javascript'>
 
@@ -183,6 +222,14 @@ function myFunction(){
                             </a>
                            
                         </li>
+
+                        <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="partner-network.html" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Partner Network
+                                </a>
+                               
+                            </li>
                        
 
                        
@@ -263,46 +310,62 @@ function myFunction(){
                            
                          <div class="tab-pane fade show active" id="question1" role="tabpanel" aria-labelledby="question1-tab">
                             <div class="row">
-                            <div class="col-lg-6 col-md-6">                
-                            <ul style="line-height: 3;color: black;font-size: 16px;">
-                                <li style="color: #204AAB;font-size:19px;" id="adhesive"><span class="spanli"> Adhesives</span></li>
-                                     <ul style="line-height: 3;color: black;font-size: 16px;">
-                                <li style="color: #04BAFF;" id="adhesion"><span class="spanli">Adhesion Promotors</span> </li>
+
+                            <div class="col-lg-6 col-md-6"> 
+
+                            <div class="dropdown">
+                            <ul style="color: black;font-size: 16px;">
+                                <li  style="color: #204AAB;font-size:19px;" id="adhesive"><span class="spanli" onclick="mobileMenuOpen()" class="dropbtn"> Adhesives</span> &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></li></ul>
+                            <div class="dropdown-content">
+                              <ul style="margin-top: -20px;line-height: 37px;" id="gmDropdown">
+                              <li style="color: #04BAFF;" id="adhesion"><span class="spanli">Adhesion Promotors</span> </li>
                                 <li style="color: #04BAFF;" id="display"><span class="spanli">Display Adhesives</span></li>
                                 <li style="color: #04BAFF;" id="optical"><span class="spanli">Optical Adhesives</span></li>
                                 <li style="color: #04BAFF;" id="electronic"><span class="spanli">Electronic Adhesives</span></li>
                                 <li style="color: #04BAFF;" id="low"><span class="spanli">Low RI Adhesives</span></li>
                                 <li style="color: #04BAFF;" id="dual"><span class="spanli">Dual cure Adhesives</span></li>
-                            </ul>
-                                
-                                <li style="color: #204AAB;font-size:19px;" id="paints"><span class="spanli">Paints & Inks</span></li>
-                                    <ul style="line-height: 3;color: black;font-size: 16px;">
-                                <li style="color: #04BAFF;" id="industrial"><span class="spanli">Industrial Paints</span></li>
+                              </ul>
+                                </div>
+                              </div>  
+                              <br>
+                          <div class="dropdown">
+                            <ul style="color: black;font-size: 16px;">
+                                <li  style="color: #204AAB;font-size:19px;" id="adhesive"><span class="spanli"> Paints & Inks</span> &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></li></ul>
+                            <div class="dropdown-content">
+                              <ul style="margin-top: -20px;line-height: 37px;">
+                               <li style="color: #04BAFF;" id="industrial"><span class="spanli">Industrial Paints</span></li>
                                 <li style="color: #04BAFF;" id="uv"> <span class="spanli">UV Soft feel paints</span></li>
-                                
-
-                            </ul>
-                                
-                            </ul>
+                              </ul>
+                                </div>
+                              </div>             
+                             
+                              
                             </div>
                              <div class="col-lg-6 col-md-6">
-                            <ul style="line-height: 3;color: black;font-size: 16px;">
-                                <li style="color: #204AAB;font-size: 19px;" id="coatings"><span class="spanli">Coatings</span></li>
-
-                                    <ul style="line-height: 3;color: black;font-size: 16px;">
-                                <li style="color: #04BAFF;" id="display"><span class="spanli">Display Coatings</span></li>
+                               <div class="dropdown">
+                            <ul style="color: black;font-size: 16px;">
+                                <li  style="color: #204AAB;font-size:19px;" id="adhesive"><span class="spanli"> Coatings</span> &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></li></ul>
+                            <div class="dropdown-content">
+                              <ul style="margin-top: -20px;line-height: 37px;">
+                               <li style="color: #04BAFF;" id="display"><span class="spanli">Display Coatings</span></li>
                                 <li style="color: #04BAFF;" id="hard"><span class="spanli">Hard Coatings</span></li>
                                 <li style="color: #04BAFF;" id="industrial"><span class="spanli">Industrial Coatings</span></li>
                                 <li style="color: #04BAFF;" id="anti"><span class="spanli">Anti Graffiti Coatings</span></li>
-                               
-                            </ul>
+                              </ul>
+                                </div>
+                              </div> 
+                              <br>
+                                 <div class="dropdown">
+                            <ul style="color: black;font-size: 16px;">
+                                <li  style="color: #204AAB;font-size:19px;" id="adhesive"><span class="spanli"> Sealants</span> &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></li></ul>
+                            <div class="dropdown-content">
+                              <ul style="margin-top: -20px;line-height: 37px;">
+                               <li style="color: #04BAFF;" id="sealants"><span class="spanli">UV Sealants</span></li>
+                              </ul>
+                                </div>
+                              </div> 
 
-                                 <li style="color: #204AAB;font-size: 19px;"><span class="spanli"> Sealants</span></li>
-                                 <ul style="line-height: 3;color: black;font-size: 16px;">
-                                <li style="color: #04BAFF;" id="sealants"><span class="spanli">UV Sealants</span></li>
-                            </ul>
-                                 
-                            </ul>
+                               
                             </div>
 
                             </div>
@@ -311,6 +374,7 @@ function myFunction(){
                          <div class="tab-pane fade" id="question2" role="tabpanel" aria-labelledby="question2-tab">
                               <div class="row">
                             <div class="col-lg-6 col-md-6">
+
                             <ul style="line-height: 3;color: black;font-size: 16px;">
                                 <li id="softua">Soft urethane acrylate</li>
 
@@ -470,6 +534,7 @@ function myFunction(){
   <script src="js/video-active.js"></script>
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
  <script src="js/main.js"></script>
+
 </body>
 
 </html>
